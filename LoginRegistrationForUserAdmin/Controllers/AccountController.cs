@@ -23,9 +23,7 @@ namespace LoginRegistrationForUserAdmin.Controllers
             {
                 FormsAuthentication.SetAuthCookie(sign.UserName, false);
                 bool Isvalid = context.SignUps.Any(x => x.UserName == "arafatmollik" && x.Password == sign.Password);
-                ViewBag.Message = "Welcome Admin";
                 
-
                 if (Isvalid) 
                 { 
 

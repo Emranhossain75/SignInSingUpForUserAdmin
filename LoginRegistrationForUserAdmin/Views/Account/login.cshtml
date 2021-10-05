@@ -31,7 +31,7 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input onclick="ShowModelPopUp();" type="submit" value="LogIn" class="btn btn-default" />
+                <input type="submit" value="LogIn" class="btn btn-default" />
             </div>
         </div>
     </div>
@@ -40,9 +40,3 @@
 <div>
     @Html.ActionLink("Click to Signup", "Signup")
 </div>
-
-<script type="text/javascript">
-    ShowModelPopUp = function () {
-        window.showModalDialog('/Home/Admin', "WindowPopup", 'width=400px,height=400px');
-    }
-</script>
